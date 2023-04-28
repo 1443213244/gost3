@@ -42,7 +42,6 @@ function setMtu(){
 function installGost3(){
     setMtu
     setDns
-    systemctl disable wgrest
     git clone https://github.com/1443213244/gost3.git
     cd gost3
     sudo bash install.sh
