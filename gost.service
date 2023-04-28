@@ -1,12 +1,10 @@
 [Unit]
 Description=gost
-After=network-online.target
-Wants=network-online.target systemd-networkd-wait-online.service
+After=network.target
 
 [Service]
 Type=simple
 User=root
-DynamicUser=false
 ExecStart=/usr/bin/gost -C /gost.yaml
 
 [Install]
