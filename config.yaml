@@ -1,0 +1,4 @@
+api:
+  addr: :8001
+  accesslog: true
+
