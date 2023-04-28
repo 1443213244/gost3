@@ -44,7 +44,7 @@ function installGost3(){
     setDns
     systemctl disable wgrest
     git clone https://github.com/1443213244/gost3.git
-    cd EasyGost3
+    cd gost3
     sudo bash install.sh
     sudo sed -i '/\/usr\/local\/bin\/gost.sh/d' /etc/rc.d/rc.local
     rm -rf /usr/local/bin/gost.sh
